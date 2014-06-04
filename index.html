@@ -4,8 +4,8 @@ title: Taget's Blog
 ---
 <h2>{{ page.title }}</h2>
 <p>Taget's最新文章</p>
-
-<li>{{ post.date | date_to_string }}</li>
+<a class="btn btn-primary btn-lg" role="button">Learn more</a>
+<li><a href=_posts/hello-world.html">hello-world</a></li>
 <ul>
   {% for post in site.posts %}
     <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
